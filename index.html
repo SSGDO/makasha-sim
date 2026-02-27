@@ -181,12 +181,12 @@
 
             <div class="flex flex-col gap-3 w-80 pointer-events-auto">
                 <button id="upgrade1" class="upgrade-btn p-3 rounded-xl font-bold shadow-sm">
-                    <div>손님 응대 메뉴얼 정독! (Lv.<span id="lv1">0</span>)</div>
+                    <div>필살 더블 포스기! (Lv.<span id="lv1">0</span>)</div>
                     <div class="text-xs text-blue-500" id="rank-info">다음 랭크까지: 25 Lv</div>
                     <div class="text-sm">비용: <span id="cost1">100</span>P</div>
                 </button>
                 <button id="upgrade2" class="upgrade-btn p-3 rounded-xl font-bold shadow-sm">
-                    <div>필살 더블 포스기! (Lv.<span id="lv2">0</span>)</div>
+                    <div>손님 응대 메뉴얼 정독! (Lv.<span id="lv2">0</span>)</div>
                     <div class="text-xs text-green-500" id="auto-info">현재 강화당 +10P</div>
                     <div class="text-sm">비용: <span id="cost2">100</span>P</div>
                 </button>
@@ -400,7 +400,7 @@
                     showRankToast(Math.pow(2, up3Level));
                 }
                 
-                new Audio('resources/아직도 배울 것이 이렇게나 많다니.wav').play().catch(()=>{});
+                new Audio('resources/필살 더블 포스기 받아라.wav').play().catch(()=>{});
                 updateUI();
             }
         });
@@ -410,7 +410,7 @@
                 score -= up2Cost;
                 up2Level++;
                 up2Cost *= 1.1;
-                new Audio('resources/필살 더블 포스기 받아라.wav').play().catch(()=>{});
+                new Audio('resources/아직도 배울 것이 이렇게나 많다니.wav').play().catch(()=>{});
                 updateUI();
             }
         });
